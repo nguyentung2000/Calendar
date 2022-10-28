@@ -1,0 +1,172 @@
+#right-sidebar {
+    background-color: #b5c1fd;
+    width: 75%;
+    display: flex;
+    justify-content: start;
+}
+
+.right-sidebar-main {
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+    background-color: whitesmoke;
+    width: 80%;
+}
+
+.right-sidebar-nav {
+    border-bottom: 3px solid #a19c9c;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2vh 3vh 2vh;
+    background-color: white;
+}
+
+.nav-search {
+    width: 33.333333%;
+}
+
+.right-sidebar-title {
+    margin: 0;
+    display: inline;
+    font-size: 3vh;
+    width: 33.333333%;
+
+}
+
+.right-sidebar-more {
+    width: 33.333333%;
+    float: right;
+    padding: 0;
+}
+
+.right-sidebar-more svg {
+    float: right;
+}
+
+
+
+.nav-search input {
+    border: none;
+    height: 3vh;
+    font-size: 2.5vh;
+    padding: 0;
+}
+
+.nav-search input:focus {
+    outline: 0;
+}
+
+.right-sidebar-content {
+    background-color: whitesmoke;
+
+}
+
+.content-header {
+    margin: 3vh 2vh 0 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-button-date {
+    border-radius: 3vh;
+    box-sizing: content-box
+}
+
+.button-week {
+    font-size: 2vh;
+    padding: 0.5vh 1vw;
+    background-color: #4d7afd;
+    color: #c9d8df;
+    border: 1px solid #4d7afd;
+    border-radius: 3vh 0 0 3vh;
+}
+
+.button-month {
+    font-size: 2vh;
+    padding: 0.5vh 1vw;
+    background-color: white;
+    border: 1px solid #4d7afd;
+    color: #4d7afd;
+    border-radius: 0 3vh 3vh 0;
+}
+
+.header-button-time {
+    margin-left: 4.7vw;
+}
+
+.header-button-before,
+.header-button-after {
+    background-color: whitesmoke;
+    border: none;
+}
+
+.header-button-time-title {
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.header-button-3 {}
+
+.header-button-weekend {
+    font-size: 2vh;
+    padding: 0.5vh 1vw;
+    background-color: white;
+    border: 1px solid #bdc0cb;
+    color: #bdc0cb;
+    border-radius: 3vh;
+    margin-right: 1.5vw;
+    box-sizing: border-box;
+}
+
+.header-button-add-task {
+    font-size: 2vh;
+    padding: 0.5vh 1vw;
+    background-color: #4d7afd;
+    color: #c9d8df;
+    border: 1px solid #4d7afd;
+    border-radius: 3vh;
+}
+
+.content-main {
+    margin: 0 2vh 0 2vh;
+    margin-top: 3vh;
+    background-color: whitesmoke;
+}
+
+.content-main-table {
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+
+th,
+td {
+    width: 20%;
+    border-top: 1px solid #bdc0cb;
+    border-left: 2px solid yellowgreen;
+
+}
+
+.right-day {
+    border-right: 1px solid #bdc0cb;
+}
+
+.bottom-day {
+    border-bottom: 1px solid #bdc0cb;
+}
+
+th {
+    padding: 1vh 2vw;
+}
+
+td {
+    text-align: left;
+    padding: 1.5vh 2vw 5vh 1vw;
+}
+
+td:hover {
+    transform: scale(1.2, 1.2);
+    border-left: 2px solid;
+    border: none;
+    background-image: linear-gradient(#a56df5, #6425ce);
+}

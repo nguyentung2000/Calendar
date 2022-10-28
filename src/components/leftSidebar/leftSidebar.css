@@ -1,0 +1,106 @@
+#left-sidebar {
+    width: 25%;
+    background-image: linear-gradient(#7594ff, #aebefc);
+    display: flex;
+    justify-content: end;
+}
+
+
+.left-sidebar-main {
+    text-align: center;
+    margin: 10vh 0 10vh 0;
+    background-color: white;
+    width: 65%;
+}
+
+.infomation {
+    width: 100%;
+
+}
+
+.left-sidebar-title {
+    margin: 1vh 0;
+    color: #a2a4af;
+    font-size: 3vh;
+    padding: 2vh 0 2vh 0;
+    border-bottom: 3px solid #a19c9c;
+}
+
+.info-main-img {
+    width: 25%;
+    border-radius: 50%;
+    height: 60px
+}
+
+.info-name {
+    font-size: 20px;
+    margin-bottom: -2vh;
+}
+
+.info-email {
+    font-size: 12px;
+    color: #9798a8;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2vh;
+    border-bottom: 2px;
+}
+
+.info-icon button {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 50%;
+}
+
+.crossbar {
+    margin-bottom: 3vh;
+}
+
+.info-task {
+    display: flex;
+    align-items: center;
+    padding: 0 2vh 0 2vh;
+}
+
+.info-task-num {
+    font-weight: 800;
+}
+
+.info-task span {
+    color: #a4a6a9;
+    font-size: 12px;
+}
+
+.info-project {
+    padding: 0 2vh 0 2vh;
+}
+
+.info-project-title {
+    color: #717179;
+    text-align: left;
+    margin-bottom: -2vh;
+    margin-top: -1vh;
+}
+
+.info-project ul {
+    text-align: left;
+    list-style: none;
+}
+
+.info-team {
+    padding: 0 2vh 0 2vh;
+    margin-top: -2vh;
+    text-align: left;
+}
+
+.info-team-title {
+    color: #717179;
+}
+
+.info-team-img {
+    width: 20%;
+    border-radius: 50%;
+}
