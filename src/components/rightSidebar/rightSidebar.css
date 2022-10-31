@@ -169,4 +169,6 @@ td:hover {
     border-left: 2px solid;
     border: none;
     background-image: linear-gradient(#a56df5, #6425ce);
+    color: white;
+    font-weight: 500;
 }
