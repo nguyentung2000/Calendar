@@ -1,0 +1,144 @@
+:root {
+    --set-color: none;
+    --margin-item-top: -4vh
+}
+
+.content-main {
+    margin: 0 2vh 0 2vh;
+    margin-top: 3vh;
+    background-color: whitesmoke;
+}
+
+.content-main-table {
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+tr {
+    border-left: 1px solid #bdc0cb;
+}
+
+th {
+    border-top: 1px solid #bdc0cb;
+    padding: 1vh 2vw;
+}
+
+th,
+td {
+    width: 20%;
+    border-right: 1px solid #bdc0cb;
+    border-bottom: 1px solid #bdc0cb;
+
+}
+
+thead:first-child {
+    border-top: 1px solid #bdc0cb;
+}
+
+table {
+    border: 2xp solid #666;
+}
+
+td {
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+    color: #555;
+    width: 20%;
+    height: 10vh;
+    font-weight: 800;
+}
+
+
+.day-in-month .info-day {
+    box-sizing: content-box;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    margin-top: -5vh;
+    margin-left: -3px;
+}
+
+.day-in-month .info-day .day-in-month-num {
+    display: inline-block;
+    width: 10%;
+    margin-left: 1vw;
+    margin-top: 0.5vh
+}
+
+.day-in-month .info-day .day-in-month-title {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* width: 100px; */
+    /* border: 1px solid red; */
+}
+
+.day-in-month .info-day .day-in-month-description {
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8rem;
+    margin-left: 20px;
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Design {
+    background-color: rgba(239, 238, 254, 255);
+    border-left: 2px solid #8787da;
+}
+
+.Design:hover {
+    color: #fff;
+    z-index: 2;
+    border-radius: 5px;
+    transform: scale(1.4);
+    background-image: linear-gradient(#9f75e4, #6c2bdf);
+}
+
+.Marketing {
+    background-color: #f7eafe;
+    border-left: 2px solid #ad75e4;
+}
+
+.Finance {
+    background-color: #fbe5e8;
+    border-left: 2px solid #e48193;
+}
+
+.Development {
+    background-color: #fff5e9;
+    border-left: 2px solid #f2c675;
+}
+
+.Marketing:hover {
+    color: #fff;
+    z-index: 2;
+    border-radius: 5px;
+    transform: scale(1.4);
+    background-image: linear-gradient(#c8aff0, #d92bdf);
+}
+
+.Finance:hover {
+    color: #fff;
+    z-index: 2;
+    border-radius: 5px;
+    transform: scale(1.4);
+    background-image: linear-gradient(#e7a9c6, #dd3a8c);
+}
+
+.Development:hover {
+    color: fff;
+    z-index: 2;
+    border-radius: 5px;
+    transform: scale(1.4);
+    background-image: linear-gradient(#f2f3ae, #c9dd34);
+}

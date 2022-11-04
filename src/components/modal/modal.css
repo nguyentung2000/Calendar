@@ -1,0 +1,126 @@
+:root {
+    --displayModal: none
+}
+
+.modal {
+    position: fixed;
+    top: 40vh;
+    right: 15vw;
+    display: var(--displayModal);
+    background-color: white;
+    width: 20vw;
+    height: 31vh;
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 10px 10px 50px gray;
+
+}
+
+.modal-header {
+    background-color: white;
+    display: var(--displayModal);
+    width: 100%;
+    justify-content: space-between;
+    width: auto;
+    height: 30%;
+    padding: 0 1vw;
+    border-radius: 5px 5px 0 0;
+}
+
+#categories {
+    border: 1px solid #4d7afd;
+    border-radius: 5px;
+    width: 45%;
+    height: 30%;
+    color: #4d7afd;
+    background-color: none;
+    margin-top: 4vh;
+}
+
+#categories:focus {
+    outline: none;
+}
+
+.modal-calendar {
+    margin-top: 4vh;
+    height: 100%;
+    display: var(--displayModal);
+    justify-content: space-around;
+}
+
+.calendar-icon {
+    margin-right: 2vw;
+}
+
+.modal-calendar-date {
+    color: #ababb4;
+    font-size: 1rem;
+    padding-left: 0.3vw;
+    text-align: center;
+}
+
+.modal-main {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    display: var(--displayModal);
+
+}
+
+.check-icon {
+    width: 10%;
+    margin: 2vh 1vw 0 1vw;
+}
+
+.modal-form {
+    width: 70%;
+}
+
+.modal-input-title:focus {
+    outline: none;
+}
+
+.modal-input-title {
+    font-size: 1.5rem;
+    height: 3vh;
+    float: right;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    color: #444;
+}
+
+.modal-input-description:focus {
+    outline: 1px solid #4d7afd;
+}
+
+.modal-input-description {
+    height: 10vh;
+    width: 100%;
+    resize: none;
+    margin-top: 0.5vh;
+    border: none;
+    background-color: white;
+    float: right;
+}
+
+.modal-button-submit {
+    background-color: #4d7afd;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 0.5vh;
+}
+
+.modal-button-cancel {
+    background-color: rgba(171, 9, 9, 0.716);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-top: 0.5vh;
+}
