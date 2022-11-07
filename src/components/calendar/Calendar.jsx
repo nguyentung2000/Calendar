@@ -62,14 +62,6 @@ const Calendar = () => {
         totalSlotDate = []
         setInfoCalendar({ allmonths: moment.months(), dateObject: infoCalendar.dateObject.add(1, "month") })
     }
-    useEffect(() => {
-        // const render = listInfo.map(item => {
-        //     if (i === item.date.day && shortMonth() === item.date.month && year() === item.date.year) {
-        //         return <div className={`info-day ${item.category}`}>{i}<br />{item.title}<br />{item.description}</div>
-        //     }
-        // })
-        // console.log(render);
-    }, []);
     for (let i = 0; i < firstDayOfMonth(); i++) {
         blank.push(<td className='day-blank'>{""}</td>)
     }
@@ -80,8 +72,10 @@ const Calendar = () => {
                     listInfo.map(item => {
                         if (i === item.date.day && shortMonth() === item.date.month && year() === item.date.year) {
                             const a = document.getElementsByClassName(`day-${i}-${month()}-${year()}`)[0]
-                            console.log(a);
-                            a.style.display = "none"
+                            if (a) {
+                                a.style.display = "none"
+                            }
+
                             return <div className={`info-day ${item.category}`}>
                                 <div className='day-in-month-num'>{i}</div>
                                 <div className='day-in-month-title'>{item.title}</div>
