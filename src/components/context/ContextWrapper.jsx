@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import GlobalContext from './GlobalContext';
 
 const ContextWrapper = (props) => {
+    const [login, setLogin] = useState(false)
     const [listInfo, setListInfo] = useState([])
     return (
         <GlobalContext.Provider
             value={
-                { listInfo, setListInfo }
+                { login, setLogin, listInfo, setListInfo }
             }
         >
             {props.children}

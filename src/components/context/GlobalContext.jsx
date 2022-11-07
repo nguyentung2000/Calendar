@@ -1,6 +1,7 @@
 import React from "react";
-// import { listInfo } from './../calendar/Calendar';
 const GlobalContext = React.createContext({
+    login: false,
+    setLogin: () => { },
     listInfo: [],
     setListInfo: () => { }
 })

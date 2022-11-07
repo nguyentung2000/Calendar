@@ -5,7 +5,7 @@ import Modal from '../modal/Modal';
 import GlobalContext from '../context/GlobalContext';
 import './calendar.css'
 const Calendar = () => {
-    const { setListInfo, listInfo } = useContext(GlobalContext)
+    const { setListInfo, listInfo, setLogin } = useContext(GlobalContext)
     let blank = []
     let totalDays = []
     let totalSlots = []
@@ -20,6 +20,9 @@ const Calendar = () => {
         month: '',
         year: ''
     })
+    const handleLogout = () => {
+        setLogin(false)
+    }
     const handleSetModal = (i) => {
         setTime({
             day: i,
@@ -66,24 +69,22 @@ const Calendar = () => {
         blank.push(<td className='day-blank'>{""}</td>)
     }
     for (let i = 1; i <= dayInMonth(); i++) {
-        totalDays.push(
-            <td key={i} className={`day-in-month`} onClick={() => handleSetModal(i)}><div className={`day-${i}-${month()}-${year()}`}>{i}</div>
-                {
-                    listInfo.map(item => {
-                        if (i === item.date.day && shortMonth() === item.date.month && year() === item.date.year) {
-                            const a = document.getElementsByClassName(`day-${i}-${month()}-${year()}`)[0]
-                            if (a) {
-                                a.style.display = "none"
-                            }
+        let content = <div className={`day-${i}-${month()}-${year()}`}>{i}</div>
+        listInfo.some(item => {
+            if (i === item.date.day && shortMonth() === item.date.month && year() === item.date.year) {
+                content = <div className={`info-day ${item.category}`}>
+                    <div className='day-in-month-num'>{i}</div>
+                    <div className='day-in-month-title'>{item.title}</div>
+                    <div className='day-in-month-description'>{item.description}</div>
+                </div>
+                return true
+            }
+            return false
+        })
 
-                            return <div className={`info-day ${item.category}`}>
-                                <div className='day-in-month-num'>{i}</div>
-                                <div className='day-in-month-title'>{item.title}</div>
-                                <div className='day-in-month-description'>{item.description}</div>
-                            </div>
-                        }
-                    })
-                }
+        totalDays.push(
+            <td key={i} className={`day-in-month`} onClick={() => handleSetModal(i)}>
+                {content}
             </td>
         )
     }
@@ -129,7 +130,7 @@ const Calendar = () => {
                     </div>
                     <div className="header-button-3">
                         <button className='header-button-weekend'>Weekends</button>
-                        <button className='header-button-add-task'>Add task</button>
+                        <button className='header-button-add-task' onClick={handleLogout}>Log out</button>
                     </div>
                 </div>
                 <div className="content-main">
