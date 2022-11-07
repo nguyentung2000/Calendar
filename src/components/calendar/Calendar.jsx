@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Modal from '../modal/Modal';
 import GlobalContext from '../context/GlobalContext';
 import './calendar.css'
-import { getElementError } from '@testing-library/react';
 const Calendar = () => {
     const { setListInfo, listInfo } = useContext(GlobalContext)
     let blank = []
@@ -105,6 +104,9 @@ const Calendar = () => {
         if ((index + 1) % 7 === 0 || (index - blank.length) + 1 === dayInMonth()) {
             totalSlotDate.push(arr)
             arr = []
+            if (!totalSlotDate[0][4].props.children) {
+                totalSlotDate.shift()
+            }
         }
         return
     })
